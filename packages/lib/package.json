@@ -6,25 +6,10 @@
   "homepage": "",
   "license": "ISC",
   "type": "module",
-  "scripts": {
-    "build": "tsc -p tsconfig.json --declaration --emitDeclarationOnly --outDir dist/types"
-  },
-  "module": "./src/index.ts",
-  "exports": {
-    ".": {
-      "type": "./dist/types/index.d.ts",
-      "import": "./src/index.ts"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/types/index.d.ts"
-      ]
-    }
-  },
+  "module": "./index.ts",
   "files": [
-    "dist",
+    "index.ts",
     "src"
-  ]
+  ],
+  "sideEffects": false
 }

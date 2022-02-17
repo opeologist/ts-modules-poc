@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build --stream",
+    "clean": "lerna run clean --stream",
+    "dev": "lerna run dev --scope=@ts-modules-poc/app --stream"
   },
   "author": "",
   "license": "ISC",
