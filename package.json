@@ -1,0 +1,21 @@
+{
+  "name": "@ts-modules-poc/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "lerna run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ts-modules-poc/app": "file:packages/app",
+    "@ts-modules-poc/lib": "file:packages/lib",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.7.0-dev.20220217"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

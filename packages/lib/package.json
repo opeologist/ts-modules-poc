@@ -1,0 +1,30 @@
+{
+  "name": "@ts-modules-poc/lib",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Aaron Giordano-Barry <agiordanobarry@fandom.com>",
+  "homepage": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json --declaration --emitDeclarationOnly --outDir dist/types"
+  },
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "type": "./dist/types/index.d.ts",
+      "import": "./src/index.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/types/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
